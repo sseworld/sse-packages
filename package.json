@@ -1,0 +1,7 @@
+{
+  "name": "@sseworld/all",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "SSE World",
+  "license": "MIT"
+}

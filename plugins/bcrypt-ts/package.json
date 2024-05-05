@@ -1,0 +1,26 @@
+{
+  "name": "@sseworld/bcrypt-ts",
+  "version": "1.0.1",
+  "author": "SSE World",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sseworld/sse-packages.git",
+    "directory": "plugins/bcrypt-ts"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^20.12.8"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts"
+}

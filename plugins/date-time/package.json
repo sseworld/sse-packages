@@ -1,0 +1,47 @@
+{
+  "name": "@sseworld/date-time",
+  "version": "1.0.0",
+  "description": "A Minimalist DateTime utility for Node.js and the browser",
+  "main": "index.js",
+  "author": "SSE World",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sseworld/sse-packages.git",
+    "directory": "plugins/date-time"
+  },
+  "module": "esm/date-time.es.js",
+  "unpkg": "date-time.min.js",
+  "exports": {
+    ".": {
+      "import": "./esm/date-time.mjs",
+      "require": "./date-time.js",
+      "browser": "./esm/date-time.es.js"
+    },
+    "./locale/*": {
+      "import": "./esm/locale/*.mjs",
+      "require": "./locale/*.js",
+      "browser": "./esm/locale/*.es.js"
+    },
+    "./plugin/*": {
+      "import": "./esm/plugin/*.mjs",
+      "require": "./plugin/*.js",
+      "browser": "./esm/plugin/*.es.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "./test.sh",
+    "test:ts": "tsd ./test/ts"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "expect.js": "^0.3.1",
+    "mocha": "^10.2.0",
+    "rollup": "^4.9.5",
+    "tsd": "^0.30.3"
+  },
+  "dependencies": {
+    "js-to-ts-converter": "^0.18.2"
+  }
+}
