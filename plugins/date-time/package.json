@@ -1,6 +1,6 @@
 {
   "name": "@sseworld/date-time",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A Minimalist DateTime utility for Node.js and the browser",
   "main": "index.js",
   "author": "SSE World",
@@ -12,6 +12,7 @@
   },
   "module": "esm/date-time.es.js",
   "unpkg": "date-time.min.js",
+  "types": "date-time.d.ts",
   "exports": {
     ".": {
       "import": "./esm/date-time.mjs",
@@ -36,12 +37,6 @@
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
-    "expect.js": "^0.3.1",
-    "mocha": "^10.2.0",
-    "rollup": "^4.9.5",
-    "tsd": "^0.30.3"
-  },
-  "dependencies": {
-    "js-to-ts-converter": "^0.18.2"
+    "rollup": "^4.9.5"
   }
 }
